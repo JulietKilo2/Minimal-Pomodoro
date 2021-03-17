@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Minimal Pomodoro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>Minimal Pomodoro</h1>
+            <ul>
+                <li id="time-pomodoro">Session</li>
+                <li id="time-short-break">Short Break</li>
+                <li id="time-long-break">Long Break</li>
+            </ul>
+        </div>
+        <div class="center">
+            <div class="timer-container">
+                <span class="timer" data-complete="true">25:00</span>
+                <div class="icon-container">
+                    <i class="icon far fa-play-circle"></i>
+                    <i class="icon far fa-pause-circle"></i>
+                    <img src="./reseticon.svg" alt="reset-icon" class="icon fa-stop-circle">
+                    <!-- <i class="far fa-stop-circle"></i> -->
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="instruction">
+                <h1>How to Pomodoro</h1>
+                <ol>
+                    <li>Get a to-do list and a timer.</li>
+                    <li>Set your timer for 25 minutes, and focus on a single task until the timer rings.</li>
+                    <li>When your session ends, mark off one pomodoro and record what you completed.</li>
+                    <li>Then enjoy a five-minute break.</li>
+                    <li>After four pomodoros, take a longer, more restorative 15-30 minute break.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+
+</html>
