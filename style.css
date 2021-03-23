@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: 0;
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
@@ -20,8 +21,8 @@ body {
 
 /* Top (menu) styles */
 .top {
-  /* border: 1px solid magenta; */
   margin: auto;
+  margin-top: 5rem;
   width: 60%;
   height: 20vh;
   display: flex;
@@ -33,10 +34,10 @@ body {
 .top h1 {
   font-family: "Lobster", cursive;
   font-size: 5rem;
+  text-align: center;
 }
 
 .top ul {
-  /* border: 1px solid magenta; */
   width: 100%;
   list-style-type: none;
   display: flex;
@@ -47,7 +48,6 @@ body {
 
 .top li {
   font-size: 1.5rem;
-  /* padding: 0.95rem 1.75rem; */
   cursor: pointer;
   font-weight: 500;
   border-bottom: 1px solid white;
@@ -56,13 +56,10 @@ body {
 
 .top li:hover {
   border-bottom: 1px solid black;
-  /* background-color: rgba(0, 0, 0, 0.115); */
-  /* box-shadow: 5px 5px 90px 5px rgba(0, 0, 0, 1); */
 }
 
 /* Center (pomodoro timer) section */
 .center {
-  /* border: 1px solid magenta; */
   height: 60%;
   width: 60%;
   margin: 0 auto;
@@ -71,7 +68,6 @@ body {
 .timer-container {
   width: 100%;
   height: 100%;
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,9 +80,9 @@ body {
   letter-spacing: 1rem;
 }
 
-.timer h1 {
+/* .timer h1 {
   font-size: 5rem;
-}
+} */
 
 .icon-container {
   /* border: 1px solid green; */
@@ -122,21 +118,25 @@ body {
   display: none;
 }
 
-.instruction {
-  margin: 0 auto;
-  /* border: 1px solid red; */
-  /* width: 35%; */
-}
-
-.instruction h1 {
-  font-size: 3.5rem;
-}
-
-.instruction ol {
-  list-style-position: inside;
-  line-height: 1.5;
-}
-
-.instruction li {
-  font-size: 1.5rem;
+/* mobile friendly setting */
+@media (max-width: 680px) {
+  .top {
+    width: 100%;
+  }
+  .top h1 {
+    font-size: 10vw;
+  }
+  .center {
+    width: 100%;
+    max-width: 100%;
+  }
+  .timer {
+    font-size: 22vw;
+  }
+  .icon {
+    font-size: 12vw;
+  }
+  .fa-stop-circle {
+    width: 9vw;
+  }
 }

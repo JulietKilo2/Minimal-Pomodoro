@@ -28,8 +28,8 @@ const timeSetting = [
     },
     {
         name: 'shortBreak',
-        min: 0,
-        sec: 3
+        min: 5,
+        sec: 0
     },
 ]
 
@@ -96,7 +96,6 @@ const startTimer = function () {
             displayTime(capturedTimeValue.min, capturedTimeValue.sec)
         }
         console.log(capturedTimeValue.min, capturedTimeValue.sec)
-        // displayTime(capturedTimeValue.min, capturedTimeValue.sec)
     }, 1000);
     pauseBtn.addEventListener("click", () => {
         console.log('paused')
@@ -136,12 +135,7 @@ Attach event listners here
 **************************/
 
 startBtn.addEventListener("click", startTimer)
-// resetBtn.addEventListener("click", () => {
-//     clearInterval(catchme)
-//     displayTime(copiedTimeValue.min, copiedTimeValue.sec);
-//     capturedTimeValue.min = copiedTimeValue.min;
-//     capturedTimeValue.sec = copiedTimeValue.sec;
-// })
+
 setPomodoro.addEventListener("click", function () {
     timeManager('pomodoro');
 });
@@ -151,7 +145,3 @@ setLongBreak.addEventListener("click", function () {
 setShortBreak.addEventListener("click", function () {
     timeManager('shortBreak')
 });
-
-// Default settings
-// displayTime(timeSetting[0].min, timeSetting[0].sec)
-
